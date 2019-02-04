@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+@import "./reset.less";
+@import "./variables.less";
+@import "./mixins.less";
+@import "./header.less";
+
+body {
+	box-sizing: border-box;
+	max-width: 500px;
+    margin: 0;
+    color: @default-font-color;
+    background-color: @default-bg-color;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+p {
+    line-height: 1.4;
+}

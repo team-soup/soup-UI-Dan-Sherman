@@ -1,0 +1,25 @@
+header {
+    .flex(space-between, baseline, row);
+    // position: fixed;
+    width: 100%;
+    background-color: @header-color;
+
+    .logo {
+        .flex(center, center);
+        width: 10%;
+
+        img {
+            margin: 1rem auto;
+            width: 100%;
+        }
+    };
+    nav {
+        .flex(space-between, baseline);
+
+        a {
+            margin: 0.6rem;
+            text-decoration: none;
+            color: @default-font-color;
+        }
+    }
+}
