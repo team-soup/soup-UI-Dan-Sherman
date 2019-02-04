@@ -155,7 +155,7 @@ header .logo img {
 }
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: baseline;
   flex-direction: row;
 }
@@ -163,6 +163,9 @@ header nav a {
   margin: 0.6rem;
   text-decoration: none;
   color: #30323D;
+}
+header nav a:hover {
+  color: white;
 }
 body {
   box-sizing: border-box;

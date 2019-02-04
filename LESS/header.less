@@ -14,12 +14,16 @@ header {
         }
     };
     nav {
-        .flex(space-between, baseline);
+        .flex(space-evenly, baseline);
 
         a {
             margin: 0.6rem;
             text-decoration: none;
             color: @default-font-color;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
