@@ -1,3 +1,10 @@
+@import "./reset.less";
+@import "./variables.less";
+@import "./mixins.less";
+@import "./header.less";
+@import "./splash.less";
+@import "./features.less";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,11 +18,11 @@ html {
 body {
 	box-sizing: border-box;
 	max-width: 500px;
-    margin: 0;
+    margin: 0 auto;
     color: @default-font-color;
     background-color: @default-bg-color;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 h1 {
@@ -26,8 +33,3 @@ p {
     line-height: 1.4;
 }
 
-@import "./reset.less";
-@import "./variables.less";
-@import "./mixins.less";
-@import "./header.less";
-@import "./splash.less";
