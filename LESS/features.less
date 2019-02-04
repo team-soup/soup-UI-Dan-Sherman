@@ -1,18 +1,23 @@
-.tabs {
-    .flex(flex-start, center, column);
+.container {
+    margin: 0 auto;
+    width: 500px;
+    
+    .features {
+        .flex(flex-start, flex-start, column);
+    
+        .feature {
+            
+            h2 {
+                font-size: 4rem;            
+            }
 
-    .tab-links {
-        .flex(flex-start, baseline, row);
-    }
+            p {
+                display: none;
+            }
 
-    .tab-items {
-        
-        .tabs-item {
-            display: none;
-        }
-
-        .item-selected {
-            display: block;
+            .selected-feature {
+                display: block;
+            }
         }
     }
 }
