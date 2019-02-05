@@ -230,5 +230,23 @@ img {
   padding: 1rem;
   border: 1px solid #30323D;
   border-radius: 5px;
-  background-color: rgba(91, 100, 148, 0.5);
+  background-color: rgba(46, 150, 79, 0.3);
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+.features .feature {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0.6rem;
+  padding: 0.4rem;
+  background-color: rgba(152, 151, 136, 0.3);
+  border: 1px solid #30323D;
+  border-radius: 5px;
 }
