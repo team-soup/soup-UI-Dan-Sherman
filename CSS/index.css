@@ -138,6 +138,9 @@ html,
 body {
   font-family: 'PT Sans', sans-serif;
 }
+body {
+  background-color: #Eff9f0;
+}
 h1 {
   font-size: 4rem;
 }
@@ -172,7 +175,8 @@ img {
   background-color: #356799;
 }
 .container .nav-bar img {
-  width: 10%;
+  width: 5rem;
+  margin: 1rem;
 }
 .container .nav-bar nav {
   display: flex;
@@ -186,4 +190,29 @@ img {
 }
 .container .nav-bar nav a:hover {
   color: white;
+}
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+  height: 337px;
+  background-image: url("/assets/soup-splash-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.splash .splash-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: rgba(239, 249, 240, 0.5);
+  box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem rgba(91, 100, 148, 0.7);
+}
+.splash .splash-cta h1 {
+  color: #30323D;
+  margin-bottom: 1rem;
 }
