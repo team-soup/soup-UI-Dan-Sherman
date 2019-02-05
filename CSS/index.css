@@ -183,7 +183,7 @@ img {
 }
 @media (min-width: 1000px) {
   .nav-container .nav-bar {
-    width: 90rem;
+    width: 98rem;
   }
 }
 .nav-container .nav-bar img {
@@ -219,11 +219,17 @@ img {
   align-items: center;
   flex-direction: row;
   margin: 0 auto;
-  width: 50rem;
+  max-width: 50rem;
   height: 337px;
   background-image: url("/assets/soup-splash-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 1000px) {
+  .splash {
+    max-width: 100rem;
+    height: 66.7rem;
+  }
 }
 .splash .splash-cta {
   display: flex;
@@ -240,16 +246,39 @@ img {
   margin-bottom: 1rem;
 }
 .content {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 0.5rem auto;
-  padding: 1rem;
-  width: 50rem;
+  margin: 0.5rem;
   border: 1px solid #30323D;
   border-radius: 5px;
   background-color: rgba(46, 150, 79, 0.3);
+}
+@media (min-width: 1000px) {
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.content .blurb-content {
+  margin: 0.5rem auto;
+  padding: 1rem;
+  max-width: 50rem;
+}
+@media (min-width: 1000px) {
+  .content .blurb-content {
+    width: 50%;
+  }
+}
+.content img {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .content img {
+    width: 50%;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 5px;
+  }
 }
 .features {
   display: flex;
@@ -257,14 +286,14 @@ img {
   align-items: flex-start;
   flex-direction: column;
   margin: 0.5rem auto;
-  width: 50rem;
+  max-width: 490px;
 }
 .features .feature {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0.6rem;
+  margin: 0.4rem;
   padding: 0.4rem;
   background-color: rgba(152, 151, 136, 0.3);
   border: 1px solid #30323D;
@@ -276,8 +305,16 @@ footer {
   align-items: center;
   flex-direction: row;
   margin: 0 auto;
-  width: 50rem;
+  max-width: 50rem;
 }
 footer p a {
   font-size: 1.2rem;
+}
+.container {
+  max-width: 500px;
+}
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+  }
 }

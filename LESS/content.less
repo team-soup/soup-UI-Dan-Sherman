@@ -1,9 +1,30 @@
 .content {
-   .flex(space-around, flex-start, column);
-   margin: 0.5rem auto;
-   padding: 1rem;
-   width: 50rem;
+   margin: 0.5rem;
    border: 1px solid @gunmetal;
    border-radius: 5px;
    background-color: rgba(46, 150, 79, 0.3);
+   @media @desktop {
+      .flex(space-evenly, flex-start, row);
+   }
+
+   .blurb-content {
+      margin: 0.5rem auto;
+      padding: 1rem;
+      max-width: 50rem;
+            
+      @media @desktop {
+         width: 50%;
+      }
+   }
+
+   img {
+      display: none;
+
+      @media @desktop {
+         width: 50%;
+         display: inline-block;
+         margin: 1rem;
+         border-radius: 5px;
+      }
+   }
 }
