@@ -250,3 +250,12 @@ img {
   border: 1px solid #30323D;
   border-radius: 5px;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer p a {
+  font-size: 1.2rem;
+}
