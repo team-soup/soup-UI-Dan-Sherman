@@ -2,7 +2,6 @@ class Feature {
     constructor (feature) {
         this.element = feature;
         this.featureButtons = this.element.querySelector('.buttons');
-        console.log(this.featureButtons);
         this.featureExpand = feature.querySelector('.expand');
         this.featureCollapse = feature.querySelector('.collapse');
         this.featureContent = feature.querySelector('.feature-content p');
