@@ -130,6 +130,7 @@ table {
 ::before,
 ::after {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 html {
   font-size: 62.5%;
@@ -317,6 +318,25 @@ img {
   .features .feature {
     width: 49%;
   }
+}
+.features .feature .expand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+}
+.features .feature .collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+}
+.features .feature .hide-btn {
+  display: none;
 }
 footer {
   display: flex;
