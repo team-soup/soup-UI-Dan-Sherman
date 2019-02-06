@@ -130,7 +130,6 @@ table {
 ::before,
 ::after {
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 html {
   font-size: 62.5%;
@@ -291,7 +290,7 @@ img {
   align-items: flex-start;
   flex-direction: column;
   margin: 0.5rem auto;
-  max-width: 490px;
+  max-width: 99%;
 }
 @media (min-width: 1000px) {
   .features {
@@ -313,13 +312,23 @@ img {
   background-color: rgba(152, 151, 136, 0.3);
   border: 1px solid #30323D;
   border-radius: 5px;
+  width: 100%;
 }
 @media (min-width: 1000px) {
   .features .feature {
     width: 49%;
   }
 }
-.features .feature .expand {
+.features .feature .feature-content p {
+  display: none;
+}
+.features .feature .toggle-on {
+  display: block;
+}
+.features .feature .buttons {
+  width: 100%;
+}
+.features .feature .buttons .expand {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +336,10 @@ img {
   width: 100%;
   cursor: pointer;
 }
-.features .feature .collapse {
+.features .feature .buttons .expand span {
+  font-size: 1.6rem;
+}
+.features .feature .buttons .collapse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,7 +347,10 @@ img {
   width: 100%;
   cursor: pointer;
 }
-.features .feature .hide-btn {
+.features .feature .buttons .collapse span {
+  font-size: 1.6rem;
+}
+.features .feature .buttons .hide-btn {
   display: none;
 }
 footer {
