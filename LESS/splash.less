@@ -1,11 +1,16 @@
 .splash {
     .flex(center, center);
     margin: 0 auto;
-    width: 100%;
+    max-width: 50rem;
     height: 337px;
     background-image: url("/assets/soup-splash-bg.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+
+    @media @desktop {
+        max-width: 100rem;
+        height: 66.7rem;
+    }
 
     .splash-cta {
         .flex(center, center, column);

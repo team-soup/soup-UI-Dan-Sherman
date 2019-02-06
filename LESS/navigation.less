@@ -1,21 +1,38 @@
-.container {
+.nav-container {
+    background-color: @navbar-color;
 
     .nav-bar {
         .flex(space-between);
         margin: 0 auto;
-        background-color: @navbar-color;
+        width: 100%;
+
+        @media @desktop {
+            width: 98rem;
+        }
+        
         img {
             width: 5rem;
             margin: 1rem;
+
+            @media @desktop {
+                width: 8rem;
+            }
         }
+
         nav {
             .flex(space-evenly);
             width: 50%;
+
+            @media @desktop {
+                width: 25%;
+            }
             a {
                 margin: 0.6rem;
+                letter-spacing: 0.09rem;
+                color: @honeydew;
 
                 &:hover {
-                    color: white;
+                    color: @gunmetal;
                }
             }
         }
