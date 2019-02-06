@@ -319,7 +319,7 @@ img {
     width: 49%;
   }
 }
-.features .feature .feature-content p {
+.features .feature p {
   display: none;
 }
 .features .feature .toggle-on {
