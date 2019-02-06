@@ -209,9 +209,11 @@ img {
 }
 .nav-container .nav-bar nav a {
   margin: 0.6rem;
+  letter-spacing: 0.09rem;
+  color: #Eff9f0;
 }
 .nav-container .nav-bar nav a:hover {
-  color: #Eff9f0;
+  color: #30323D;
 }
 .splash {
   display: flex;
@@ -258,7 +260,7 @@ img {
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: row;
-    width: 95rem;
+    width: 75rem;
   }
 }
 .content .blurb-content {
