@@ -15,7 +15,6 @@ class NavLinks {
 }
 
 let navLinks = document.querySelectorAll('.nav-wrapper ul li a');
-console.log(navLinks);
 navLinks.forEach(navLink => new NavLinks(navLink));
 
 class Feature {
