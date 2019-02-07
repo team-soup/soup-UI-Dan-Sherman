@@ -254,6 +254,9 @@ img {
   color: #30323D;
   margin-bottom: 1rem;
 }
+.splash .splash-cta button:hover {
+  background-color: #2e964f;
+}
 .content {
   margin: 0.5rem auto;
   border: 1px solid #30323D;
