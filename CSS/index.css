@@ -271,6 +271,7 @@ img {
     align-items: flex-start;
     flex-direction: row;
     width: 75%;
+    margin: 1.5rem auto;
   }
 }
 @media (min-width: 800px) {
