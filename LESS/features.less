@@ -9,8 +9,14 @@
         flex-wrap: wrap;
     }
 
+    @media @tablet {
+        .flex(space-evenly, baseline, row);
+        max-width: 99%;
+        flex-wrap: wrap;
+    }
+
     .feature {
-        .flex(space-evenly, flex-start, column);
+        .flex(space-evenly, center, column);
         margin: 0.4rem;
         padding: 0.4rem;
         background-color: rgba(152, 151, 136, 0.3);
@@ -20,6 +26,10 @@
 
         @media @desktop {
             width: 49%;
+        }
+
+        @media @tablet {
+            width: 48%;
         }
 
         p {

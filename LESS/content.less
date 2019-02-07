@@ -8,6 +8,10 @@
       .flex(space-evenly, flex-start, row);
       width: 75%;
    }
+   @media @tablet {
+      .flex(space-evenly, center, row);
+      width: 75%;
+   }
 
    .blurb-content {
       .flex(center,center,column);
@@ -16,7 +20,7 @@
       width: 92%;
             
       @media @desktop {
-         width: 50%;
+         width: 49%;
       }
    }
 
@@ -24,9 +28,16 @@
       display: none;
 
       @media @desktop {
-         width: 50%;
+         width: 49%;
          display: inline-block;
          margin: 1rem;
+         border-radius: 5px;
+      }
+
+      @media @tablet {
+         width: 49%;
+         display: inline-block;
+         margin: 0.5rem;
          border-radius: 5px;
       }
    }

@@ -1,14 +1,12 @@
 class NavLinks {
-    constructor (navLinks) {
-        this.navLinks = navLinks;
-        this.navLink = this.navLinks.querySelector('a');
+    constructor (navLink) {
+        this.navLink = navLink;
         this.navLink.addEventListener('mouseover', () => this.grow());
         this.navLink.addEventListener('mouseleave', () => this.shrink());
     }
 
     grow () {
-        this.navLink.style.fontSize = '2.5rem';
-        console.log("growing");
+        this.navLink.style.fontSize = '2.5rem';        
     }
 
     shrink () {
@@ -16,11 +14,12 @@ class NavLinks {
     }
 }
 
-let navLinks = document.querySelectorAll('.nav-bar');
-navLinks.forEach(navLinks => new NavLinks(navLinks));
+let navLinks = document.querySelectorAll('nav a');
+console.log(navLinks);
+navLinks.forEach(navLink => new NavLinks(navLink));
 
 let signUpBtn = document.querySelector('.splash-cta button');
-signUpBtn.addEventListener('click', () => {});
+signUpBtn.addEventListener('mouseover', () => {});
 
 class Feature {
     constructor (feature) {
