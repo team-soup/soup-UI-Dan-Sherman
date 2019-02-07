@@ -18,9 +18,6 @@ let navLinks = document.querySelectorAll('nav a');
 console.log(navLinks);
 navLinks.forEach(navLink => new NavLinks(navLink));
 
-let signUpBtn = document.querySelector('.splash-cta button');
-signUpBtn.addEventListener('mouseover', () => {});
-
 class Feature {
     constructor (feature) {
         this.feature = feature;

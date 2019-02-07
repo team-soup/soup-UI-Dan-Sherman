@@ -173,46 +173,47 @@ img {
 .nav-container {
   background-color: #356799;
 }
-.nav-container .nav-bar {
+.nav-container .nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  max-width: 50rem;
   margin: 0 auto;
   width: 100%;
+  background-color: #356799;
 }
 @media (min-width: 1000px) {
-  .nav-container .nav-bar {
-    width: 98rem;
+  .nav-container .nav-wrapper {
+    max-width: 100rem;
   }
 }
-.nav-container .nav-bar img {
+@media (min-width: 800px) {
+  .nav-container .nav-wrapper {
+    max-width: 80rem;
+  }
+}
+.nav-container .nav-wrapper img {
   width: 5rem;
   margin: 1rem;
 }
 @media (min-width: 1000px) {
-  .nav-container .nav-bar img {
+  .nav-container .nav-wrapper img {
     width: 8rem;
   }
 }
-.nav-container .nav-bar nav {
+.nav-container .nav-wrapper ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 50%;
 }
-@media (min-width: 1000px) {
-  .nav-container .nav-bar nav {
-    width: 25%;
-  }
-}
-.nav-container .nav-bar nav a {
+.nav-container .nav-wrapper a {
   margin: 0.6rem;
   letter-spacing: 0.09rem;
   color: #Eff9f0;
 }
-.nav-container .nav-bar nav a:hover {
+.nav-container .nav-wrapper a:hover {
   color: #30323D;
 }
 .splash {
@@ -252,6 +253,9 @@ img {
 .splash .splash-cta h1 {
   color: #30323D;
   margin-bottom: 1rem;
+}
+.splash .splash-cta button:hover {
+  background-color: #2e964f;
 }
 .content {
   margin: 0.5rem auto;
