@@ -406,11 +406,11 @@ footer {
 footer p a {
   font-size: 1.2rem;
 }
-.container {
+.main-container {
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
-  .container {
+  .main-container {
     max-width: 1000px;
   }
 }
