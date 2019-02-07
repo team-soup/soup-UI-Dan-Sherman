@@ -3,19 +3,24 @@
    border: 1px solid @gunmetal;
    border-radius: 5px;
    background-color: rgba(46, 150, 79, 0.3);
-   width: 48rem;
+   width: 95%;
    @media @desktop {
       .flex(space-evenly, flex-start, row);
-      width: 75rem;
+      width: 75%;
+   }
+   @media @tablet {
+      .flex(space-evenly, center, row);
+      width: 75%;
    }
 
    .blurb-content {
+      .flex(center,center,column);
       margin: 0.5rem auto;
       padding: 1rem;
-      width: 46rem;
+      width: 92%;
             
       @media @desktop {
-         width: 50%;
+         width: 49%;
       }
    }
 
@@ -23,9 +28,16 @@
       display: none;
 
       @media @desktop {
-         width: 50%;
+         width: 49%;
          display: inline-block;
          margin: 1rem;
+         border-radius: 5px;
+      }
+
+      @media @tablet {
+         width: 49%;
+         display: inline-block;
+         margin: 0.5rem;
          border-radius: 5px;
       }
    }

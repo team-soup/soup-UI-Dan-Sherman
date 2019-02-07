@@ -1,24 +1,70 @@
 .features {
     .flex(space-evenly, flex-start, column);
     margin: 0.5rem auto; 
-    max-width: 490px;
+    max-width: 97%;
 
     @media @desktop {
         .flex(space-evenly, baseline, row);
-        max-width: 99rem;
+        max-width: 99%;
+        flex-wrap: wrap;
+    }
+
+    @media @tablet {
+        .flex(space-evenly, baseline, row);
+        max-width: 99%;
         flex-wrap: wrap;
     }
 
     .feature {
-        .flex(space-evenly, flex-start, column);
+        .flex(space-evenly, center, column);
         margin: 0.4rem;
         padding: 0.4rem;
         background-color: rgba(152, 151, 136, 0.3);
         border: 1px solid @gunmetal;
         border-radius: 5px;
+        width: 100%;
 
         @media @desktop {
             width: 49%;
+        }
+
+        @media @tablet {
+            width: 48%;
+        }
+
+        p {
+            display: none;
+        }
+
+        .toggle-on{
+            display: block;
+        }
+        
+        .buttons {
+            width: 100%;
+            .expand {
+                .flex();
+                width: 100%;
+                cursor: pointer;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+            
+            .collapse {
+                .flex();
+                width: 100%;
+                cursor: pointer;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .hide-btn {
+                display: none;
+            }
         }
     }
 }
