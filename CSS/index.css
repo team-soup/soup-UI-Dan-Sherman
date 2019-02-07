@@ -264,6 +264,10 @@ img {
   }
 }
 .content .blurb-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0.5rem auto;
   padding: 1rem;
   width: 92%;
@@ -290,7 +294,7 @@ img {
   align-items: flex-start;
   flex-direction: column;
   margin: 0.5rem auto;
-  max-width: 99%;
+  max-width: 97%;
 }
 @media (min-width: 1000px) {
   .features {
@@ -298,7 +302,7 @@ img {
     justify-content: space-evenly;
     align-items: baseline;
     flex-direction: row;
-    max-width: 99rem;
+    max-width: 99%;
     flex-wrap: wrap;
   }
 }
